@@ -1,0 +1,72 @@
+#chessgame {
+    width: 800px;
+    height: 800px;
+    background-size: contain !important;
+    background: url(../images/grid.jpg);
+}
+
+#chessgame .learningJQ-cell {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    background: transparent !important;
+    z-index: auto !important;
+    transform-style: flat !important;
+    -webkit-transform-style: flat !important;
+}
+
+#chessgame .front {
+    z-index: auto !important;
+}
+
+#chessgame .learningJQ-cell .learningJQ-cell-image {
+    background-size: cover;
+    z-index: 10;
+}
+
+#chessgame .learningJQ-cell .learningJQ-cell-color {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 10%;
+    border: 4px solid transparent;
+    z-index: auto !important;
+}
+
+#chessgame .selectedPiece .learningJQ-cell-color {
+    border-color: dodgerblue;
+    background: rgba(127, 190, 255, 0.5);
+}
+
+#chessgame .lastMove .learningJQ-cell-color {
+    border-color: yellow;
+    background: rgba(255, 255, 0, 0.3);
+}
+
+#chessgame .validMove .learningJQ-cell-color {
+    border-color: forestgreen !important; /* to overide lastmove */
+    background: rgba(127, 255, 0, 0.3) !important; /* to overide lastmove */
+}
+
+#chessgame .validMove:hover .learningJQ-cell-color {
+    border-color: lawngreen !important; /* to overide lastmove */
+    background: rgba(127, 255, 0, 0.4) !important; /* to overide lastmove */
+}
+
+#chessgame .inCheck .learningJQ-cell-color {
+    border-color: darkred;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.pieceBPawn .learningJQ-cell-image { background-image: url(../images/BPawn.svg) !important; }
+.pieceWPawn .learningJQ-cell-image { background-image: url(../images/WPawn.svg) !important; }
+.pieceBKing .learningJQ-cell-image { background-image: url(../images/Bking.svg) !important; }
+.pieceWKing .learningJQ-cell-image { background-image: url(../images/Wking.svg) !important; }
+.pieceBQueen .learningJQ-cell-image, .ui-icon-BQueen { background-image: url(../images/BQueen.svg) !important; }
+.pieceWQueen .learningJQ-cell-image, .ui-icon-WQueen { background-image: url(../images/WQueen.svg) !important; }
+.pieceBBishop .learningJQ-cell-image, .ui-icon-BBishop { background-image: url(../images/BBishop.svg) !important; }
+.pieceWBishop .learningJQ-cell-image, .ui-icon-WBishop { background-image: url(../images/WBishop.svg) !important; }
+.pieceBKnight .learningJQ-cell-image, .ui-icon-BKnight { background-image: url(../images/BKnight.svg) !important; }
+.pieceWKnight .learningJQ-cell-image, .ui-icon-WKnight { background-image: url(../images/WKnight.svg) !important; }
+.pieceBRook .learningJQ-cell-image, .ui-icon-BRook { background-image: url(../images/BRook.svg) !important; }
+.pieceWRook .learningJQ-cell-image, .ui-icon-WRook { background-image: url(../images/WRook.svg) !important; }

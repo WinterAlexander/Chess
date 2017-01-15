@@ -1,0 +1,225 @@
+.learningJQ-cell-container {
+    float:left;
+	box-sizing:border-box;
+	display:inline-table;
+	position:relative;
+}
+.learningJQ-cell-container.fonfr {
+    clear:both;
+}
+.learningJQ-cell {
+	box-sizing:border-box;
+	position:relative;
+    width: 50px;
+    height: 50px;
+    background-color:#004200;
+    color:#00FF00;
+    cursor:pointer;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+	transition: transform 0.75s linear;
+	-webkit-transition: -webkit-transform 0.75s linear;
+	-moz-transition: -moz-transform 0.75s linear;
+	-o-transition: -o-transform 0.75s linear;
+	-ms-transition: -ms-transform 0.75s linear;
+}
+.learningJQ-cell-disabled {
+cursor:default;
+}
+.learningJQ-cell.selected {
+border:2px solid blue;
+}
+.learningJQ-cell.on {
+    background-color:#00FF00;
+    color:#004200;
+}
+.learningJQ-cell.makeCellSquare:after {
+    content:'';
+	padding-top:100%;
+}
+.learningJQ-cell.flipped  {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+.learningJQ-cell .cell-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index:1;
+	display:table;
+    box-sizing: border-box;
+}
+.learningJQ-cell .cell-face.back {
+display: block;
+transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);
+}
+
+.learningJQ-cell-color,
+.learningJQ-cell-image {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+.learningJQ-cell > .learningJQ-cell-color {
+    z-index:10;
+    background-color:transparent;
+}
+.learningJQ-cell > .learningJQ-cell-image {
+    z-index:20;
+}
+.learningJQ-cell-image {
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.learningJQ-displayAdapter {
+}
+.learningJQ-displayAdapter.text {
+text-align: center;
+position: relative;
+z-index: 30;
+display: table-cell;
+width: 100%;
+height: 100%;
+vertical-align: middle;
+}
+.learningJQ-displayAdapter.symbols,
+.learningJQ-displayAdapter.digits {
+    position:absolute;
+    z-index:30;
+    top: 50%;
+    left: 50%;
+}
+.learningJQ-displayAdapter.symbols > .learningJQ-displayAdapter-symbols {
+float: left;
+border: 0;
+box-sizing: border-box;
+position:relative;
+margin-right:1px;
+margin-bottom:1px;
+}
+.learningJQ-displayAdapter.symbols > .learningJQ-displayAdapter-symbols.lc {
+margin-right:0;
+}
+.learningJQ-displayAdapter.symbols > .learningJQ-displayAdapter-symbols.lr {
+margin-bottom:0;
+}
+.learningJQ-displayAdapter.symbols > .learningJQ-displayAdapter-symbols > .learningJQ-displayAdapter-symbols-dot {
+position: absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+border: 0 solid transparent;
+}
+.learningJQ-displayAdapter-symbols-dot {
+background-color:#004B00;
+border-radius: 35%;
+}
+.learningJQ-displayAdapter-symbols-dot.on {
+background-color:#00FF00;
+}
+.learningJQ-cell.on .learningJQ-displayAdapter-symbols-dot {
+    background-color:#00EC00;
+}
+.learningJQ-cell.on .learningJQ-displayAdapter-symbols-dot.on {
+    background-color:#004B00;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar {
+    position:absolute;
+    border-style: solid;
+    border: 0 solid transparent;
+}
+.learningJQ-displayAdapter-digits-bar {
+    background-color: #004B00;
+	border-radius:45%;
+}
+.learningJQ-displayAdapter-digits-bar.on {
+    background-color: #00FF00;
+}
+.learningJQ-cell.on .learningJQ-displayAdapter-digits-bar {
+    background-color:#00EC00;
+}
+.learningJQ-cell.on .learningJQ-displayAdapter-digits-bar.on {
+    background-color:#004B00;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d1 {
+    top:5.88%;
+    left:30.59%;
+    width: 40.00%;
+    height: 8.24%;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d2 {
+    top: 45.88%;
+    left: 30.59%;
+    width: 40.00%;
+    height: 8.24%;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d3 {
+    top:85.88%;
+    left:30.59%;
+    width: 40.00%;
+    height: 8.24%;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d4 {
+    top:9.41%;
+    left:22.35%;
+    width: 8.24%;
+    height: 40.00%;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d5 {
+    top:9.41%;
+    left:70.59%;
+    width: 8.24%;
+    height: 40.00%;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d6 {
+    top:50.59%;
+    left:22.35%;
+    width: 8.24%;
+    height: 40.00%;
+}
+.learningJQ-displayAdapter.digits > .learningJQ-displayAdapter-digits-bar.d7 {
+    top:50.59%;
+    left:70.59%;
+    width: 8.24%;
+    height: 40.00%;
+}
+
+        #f1_container {
+          position: relative;
+          margin: 10px auto;
+          width: 450px;
+          height: 281px;
+          z-index: 1;
+        }
+        #f1_container {
+          perspective: 1000;
+        }
+        #f1_card {
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+          transition: all 1.0s linear;
+        }
+        #f1_container.flipped #f1_card {
+          transform: rotateY(180deg);
+          box-shadow: -5px 5px 5px #aaa;
+        }
+        .face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+        .face.back {
+          display: block;
+          transform: rotateY(180deg);
+          box-sizing: border-box;
+          padding: 10px;
+          color: white;
+          text-align: center;
+          background-color: #aaa;
+        }

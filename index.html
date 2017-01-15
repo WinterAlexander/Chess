@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Chess Game</title>
+
+        <link rel="stylesheet" type="text/css" href="js/jquery/css/jquery-ui.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/jquery/css/jquery-learningJQ-grid-cell-displayAdapter.css" />
+        <link rel="stylesheet" type="text/css" href="css/page.css">
+        <link rel="stylesheet" type="text/css" href="css/chessgame.css">
+      
+        <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery-learningJQ-grid-cell-displayAdapter.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/moveValidation.js"></script>
+	  </head>
+	  <body>
+		  <div id="container">
+			  <div class="controlPanel">
+				  <div class="button-wrapper">
+            <button id="newgame">Nouvelle Partie</button>
+				  </div><!--
+		   --><div class="button-wrapper">
+            <div id="currentTurn"></div>
+          </div>
+        </div>
+
+        <div class="lettersContainer top"></div>
+          
+        <div id="horiz-wrapper">
+          <div class="numbersContainer"></div><!-- This comment removes the "space" between the divs. (Stupid but true)
+       --><div id="chessgame"></div><!--
+       --><div class="numbersContainer"></div><!--
+     --></div>
+          
+        <div class="lettersContainer bottom"></div>
+
+        <div class="controlPanel">
+          <div class="button-wrapper">
+            <button id="showMoves"></button>
+          </div><!--
+       --><div class="button-wrapper">
+            <button id="rotateBoard"></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog" title="Dialog">
+        <p>Dialog text</p>
+      </div>
+    </body>
+</html>
