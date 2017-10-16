@@ -60,8 +60,8 @@
 
 .pieceBPawn .learningJQ-cell-image { background-image: url(../images/BPawn.svg) !important; }
 .pieceWPawn .learningJQ-cell-image { background-image: url(../images/WPawn.svg) !important; }
-.pieceBKing .learningJQ-cell-image { background-image: url(../images/Bking.svg) !important; }
-.pieceWKing .learningJQ-cell-image { background-image: url(../images/Wking.svg) !important; }
+.pieceBKing .learningJQ-cell-image { background-image: url(../images/BKing.svg) !important; }
+.pieceWKing .learningJQ-cell-image { background-image: url(../images/WKing.svg) !important; }
 .pieceBQueen .learningJQ-cell-image, .ui-icon-BQueen { background-image: url(../images/BQueen.svg) !important; }
 .pieceWQueen .learningJQ-cell-image, .ui-icon-WQueen { background-image: url(../images/WQueen.svg) !important; }
 .pieceBBishop .learningJQ-cell-image, .ui-icon-BBishop { background-image: url(../images/BBishop.svg) !important; }
